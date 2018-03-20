@@ -1,0 +1,12 @@
+
+# HTID:2474498: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2474498:
+
+# Prevent directory listing
+Options -Indexes
+
+# Turn on RewriteEngine
+RewriteEngine on
+# Redirect all requests to /publoc
+RewriteRule ^(.*)$ /public/index.php [NC,L,QSA]
